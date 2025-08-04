@@ -1,0 +1,21 @@
+let unlikedCount = 0;
+let targetCount = 3472;
+let unlikeInterval = setInterval(() => {
+  const likeButtons = document.querySelectorAll('button[data-testid="unlike"]');
+  
+  if (likeButtons.length === 0 || unlikedCount >= targetCount) {
+    console.log(`Stopped. Total tweets unliked: ${unlikedCount}`);
+    clearInterval(unlikeInterval);
+    return;
+  }
+
+  likeButtons.forEach(btn => {
+    if (unlikedCount < targetCount) {
+      btn.click();
+      unlikedCount++;
+    }
+  });
+
+  console.log(`Unliked so far: ${unlikedCount} tweets`);
+  window.scrollBy(0, 3000); 
+}, 4000); 
