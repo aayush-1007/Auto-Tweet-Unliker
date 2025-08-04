@@ -1,0 +1,11 @@
+1. Open twitter or X on your browser.
+2. Go to your profile and go to the likes tab in it.
+3. Press F12 or right click and click on inspect and go on console.
+4. Copy the code that is given in this repo and paste it and run it.
+5. By default it will unlike 100 tweets but, you can change it by changing 
+the targetCount variable at the start.
+6. If it stops in between after only liking a few tweets change the waiting 
+time at the bottom by default it is 4000(4 seconds) you can increase it to 
+whatever you like for ex. -> 10000(10 seconds).
+7. If it stops because of too many requests, refresh and wait for a few hours and 
+try again.
